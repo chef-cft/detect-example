@@ -1,0 +1,7 @@
+secrets/*
+!secrets/.gitkeep
+nodes
+local-mode-cache
+.vagrant
+.inspec
+automate_login

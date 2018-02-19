@@ -1,0 +1,17 @@
+{
+   "name": "audit",
+   "run_list": ["audit::default"],
+   "default_attributes": {
+     "audit": {
+       "fetcher": "chef-automate",
+       "reporter": "chef-automate",
+       "insecure": true,
+       "profiles": [{
+        "name": "test", 
+        "compliance": "admin/cis-centos7-level1"
+       }]
+     }
+   },
+   "json_class": "Chef::Role",
+   "chef_type": "role"
+}
